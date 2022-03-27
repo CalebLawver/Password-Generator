@@ -15,7 +15,7 @@ var confirmInputs = {
   qSpecial: false,
 };
 
-function passGen() {
+function passSettings() {
   var confirmLength = "";
 
   while (isNaN(confirmLength) || confirmLength < 8 || confirmLength > 128) {
@@ -50,7 +50,7 @@ function passGen() {
 
 function generatePassword() {
   // This is setting up what will be used to generate the password.
-  length = passGen();
+  length = passSettings();
   var charPool = "";
   var createdPass = "";
 
